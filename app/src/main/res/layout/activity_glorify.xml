@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GlorifyActivity">
+
+    <com.fanhl.glorifyimageview.GlorifyImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:id="@+id/history_bar_container"
+                android:layout_width="@dimen/history_bar_width"
+                android:layout_height="match_parent"
+                tools:background="#84a9d4c1"/>
+            <FrameLayout
+                android:id="@+id/progressbar_container"
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="@dimen/progressbar_height"
+                android:layout_gravity="bottom"
+                tools:background="#84d4a9c1"/>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/glorify_toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/glorify_toolbar_height"
+            tools:background="#7fa1b1d9"/>
+    </LinearLayout>
+</FrameLayout>
